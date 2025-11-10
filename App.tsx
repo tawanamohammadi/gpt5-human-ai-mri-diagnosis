@@ -50,7 +50,7 @@ const Header = () => (
 const PostContent = () => {
     const sectionTitleStyle = "text-xl font-bold mt-6 mb-3 text-cyan-400 flex items-center";
     const listItemStyle = "list-disc ml-6 mb-1";
-    const codeStyle = "font-mono bg-[#272729] px-1 rounded text-sm";
+    const codeStyle = "font-mono bg-[#272729] px-2 py-1 rounded text-sm text-gray-300 mr-1 mb-1 inline-block";
     const linkStyle = "text-cyan-400 hover:underline";
 
     return (
@@ -114,6 +114,28 @@ const PostContent = () => {
             </p>
             <p className="text-sm text-gray-400 mt-6">(© 2025 Tawana Mohammadi – All Rights Reserved)</p>
 
+            <hr className="border-t border-[#343536] my-6" />
+
+            <h2 className={sectionTitleStyle}>
+                <span className="text-2xl mr-2">👤</span> About the Author
+            </h2>
+            <p>
+                <strong>Tawana Mohammadi (توانا محمدی)</strong> is an independent AI researcher, educator, and data strategist working at the intersection of ethics, intelligence, and data governance. Their mission is to design human-centered, transparent, and responsible AI systems that empower individuals and organizations through ethical innovation and data literacy.
+            </p>
+
+            <h3 className="text-lg font-bold mt-4 mb-2 text-gray-200">Research Interests</h3>
+            <ul className="list-disc ml-6 space-y-1">
+                <li>AI Ethics & Governance</li>
+                <li>Data Transparency & Strategy</li>
+                <li>Prompt Engineering & AI Literacy</li>
+                <li>Cybersecurity & Digital Rights</li>
+                <li>Human-AI Collaboration</li>
+            </ul>
+
+            <h3 className="text-lg font-bold mt-4 mb-2 text-gray-200">Skills & Tech Stack</h3>
+            <p>
+                <code className={codeStyle}>AI Systems</code><code className={codeStyle}>Data Strategy</code><code className={codeStyle}>Machine Learning</code><code className={codeStyle}>Prompt Engineering</code><code className={codeStyle}>Open Data</code><code className={codeStyle}>Cybersecurity</code><code className={codeStyle}>Ethics Frameworks</code><code className={codeStyle}>Python</code><code className={codeStyle}>PyTorch</code><code className={codeStyle}>OpenAI API</code><code className={codeStyle}>TensorFlow</code><code className={codeStyle}>Git</code><code className={codeStyle}>LangChain</code>
+            </p>
         </div>
     );
 };
@@ -127,8 +149,8 @@ const Sidebar = () => (
                     <img src="https://styles.redditmedia.com/t5_fsol1i/styles/profileIcon_v2qeva7zloyf1.jpg?s=eb8f8e3de578d7e4832cdd639d863335a0333578" alt="Tawana Mohammadi" className="w-16 h-16 rounded-full border-4 border-[#1A1A1B]" />
                     <h3 className="ml-3 font-bold text-lg">u/tawanamohammadi</h3>
                 </div>
-                <p className="text-sm text-gray-400 mt-2">Independent AI Researcher & Educator. Focusing on AI ethics, transparency, and human-centered design.</p>
-                <a href="https://tawana.online" target="_blank" rel="noopener noreferrer" className="bg-cyan-500 text-white font-bold py-2 px-4 rounded-full w-full block text-center mt-4 hover:bg-cyan-600">
+                <p className="text-sm text-gray-400 mt-2">AI Researcher • Data Strategist • Educator. "Ethics in intelligence, transparency in data."</p>
+                <a href="https://tawana.online" target="_blank" rel="noopener noreferrer" className="bg-cyan-500 text-white font-bold py-2 px-4 rounded-full w-full block text-center mt-4 hover:bg-cyan-600 transition-colors">
                     Visit Website
                 </a>
             </div>
@@ -170,7 +192,7 @@ const App: React.FC = () => {
                                 <span className="mx-1">•</span>
                                 <span>Posted on Nov, 2025</span>
                             </div>
-                            <h1 className="text-2xl font-bold my-2 text-white">
+                            <h1 className="text-2xl font-bold my-2 text-white hover:text-gray-300 transition-colors cursor-pointer">
                                 My Research Journey — From Preprint to Major Revision: ChatGPT-5 in Lumbar MRI Interpretation
                             </h1>
                             <div className="text-sm leading-relaxed">
